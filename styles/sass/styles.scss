@@ -35,7 +35,27 @@ h1, h2, h3, h4, ul, p {
   padding: 0;
 }
 section {
-  margin: 100px 0;
+  padding: 100px 0;
+}
+h2 {
+  font-family: $font1;
+  font-size: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colour6;
+}
+p {
+  font-family: $font2;
+  line-height: 1.45rem;
+  letter-spacing: 0.01rem;
+}
+button {
+  font-family: $font1;
+  text-align: center;
+  line-height: 1.45rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px;
 }
 
 // Header
@@ -78,15 +98,54 @@ header {
     line-height: 1.9rem;
     letter-spacing: 0.02rem;
     color: $colour1;
+    text-align: left;
+    text-transform: lowercase;
   }
 }
 
 // Main
 // News
+.news {
+background-color: $colour4;
 
+  .imgContainer {
+    display: flex;
+    padding-top: 30px;
+    
+    img {
+      margin: 20px;
+      width: calc((100% / 3) - 40px);
+    }
+  }
+}
 
 // Best
+.best {
+  background-color: $colour4;
+  
+  .wrapper {
+    display: flex;
 
+    
+
+    div {
+      padding-left: 50px;
+
+      h2 {
+        text-align: left;
+      }
+
+      p {
+        margin-top: 15px;
+      }
+      .button1 {
+        background: $colour1;
+        color: $colour3;
+        margin-top: 25px;
+      }
+    }
+  }
+}
 
 // Smoothie
 
