@@ -261,6 +261,7 @@ section {
 header {
   background-image: url(./assets/header-alt.png);
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 header ul {
@@ -288,7 +289,7 @@ header h1 {
   line-height: 4.37rem;
   color: #1d81cc;
   text-transform: uppercase;
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 header h2 {
   font-family: "Barlow", sans-serif;
