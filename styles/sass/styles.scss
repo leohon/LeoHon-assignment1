@@ -34,6 +34,9 @@ h1, h2, h3, h4, ul, p {
   margin: 0;
   padding: 0;
 }
+section {
+  margin: 100px 0;
+}
 
 // Header
 header {
@@ -42,10 +45,39 @@ header {
   // background-position: bottom;
   height: 100vh;
   
+  ul {
+    display: flex;
+    justify-content: right;
+
+    li {
+      font-family: $font3;
+      font-size: 0.9rem;
+      text-align: right;
+      line-height: 1.45rem;
+      text-transform: uppercase;
+      padding-left: 50px;
+
+      a {
+        color: $colour1;
+      }
+    }
+  }
+
   h1 {
     font-family: $font1;
     font-size: 5.23rem;
     line-height: 4.37rem;
+    color: $colour6;
+    text-transform: uppercase;
+    margin-top: 30vh;
+  }
+
+  h2 {
+    font-family: $font2;
+    font-size: 1.86rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02rem;
+    color: $colour1;
   }
 }
 
