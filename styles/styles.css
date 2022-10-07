@@ -225,3 +225,42 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(./assets/header-alt.png);
+  background-size: cover;
+  height: 100vh;
+}
+header h1 {
+  font-family: "Emblema One", cursive;
+  font-size: 5.23rem;
+  line-height: 4.37rem;
+}
