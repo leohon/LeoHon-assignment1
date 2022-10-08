@@ -6,6 +6,7 @@ $colour3: #f0f5ff;
 $colour4: #fcdde2;
 $colour5: #1f2022;
 $colour6: #1d81cc;
+$colour7: #ffffff;
 
 $font1: 'Emblema One', cursive;
 $font2: 'Barlow', sans-serif;
@@ -37,11 +38,19 @@ h1, h2, h3, h4, ul, p {
 section {
   padding: 100px 0;
 }
+
 h2 {
   font-family: $font1;
   font-size: 2.1rem;
   text-transform: uppercase;
   color: $colour6;
+}
+h4,
+.menu2 {
+  font-family: $font1;
+  font-size: 1.25rem;
+  color: $colour6;
+  text-transform: uppercase;
 }
 p {
   font-family: $font2;
@@ -55,11 +64,6 @@ button {
   text-transform: uppercase;
   border: none;
   padding: 15px;
-}
-.button2 {
-  color: $colour1;
-  background-color: $colour2;
-  margin-top: 10px;
 }
 
 // Header
@@ -147,7 +151,7 @@ header {
       }
       .button1 {
         background: $colour1;
-        color: $colour3;
+        color: $colour7;
         margin-top: 25px;
       }
     }
@@ -173,6 +177,12 @@ header {
   }
 }
 
+.button2 {
+  color: $colour1;
+  background-color: $colour2;
+  margin-top: 10px;
+}
+
 // New Home
 .new-home {
   background-color: $colour3;
@@ -196,21 +206,67 @@ header {
   }
 }
 
+// Other Links
+.links {
+  background-color: $colour4;
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
 
-
-
-
-// New Home
-
-
-// Other
-
+    a {
+      font-family: $font1;
+      font-size: 1.56rem;
+      color: $colour6;
+      text-transform: uppercase;
+    }
+  }
+} 
 
 // Footer
-// Call
+// Call to Action
+.action {
+  background-color: $colour3;
+  
+  .wrapper {
+    display: flex;
 
+    p {
+      padding-top: 10px;
+    }
+
+    .newsletter {
+      width: 65%;
+
+      input {
+        border: 1px solid $colour2;
+        height: 59px;
+        width: 65%;
+      }
+    }
+
+    .con-men {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      
+      .menu2 {
+        text-align: right;
+
+        a {
+          color: $colour6;
+        }
+      }
+    }
+  }
+}
 
 // Copyright
-
+.copyright {
+  background-color: $colour1;
+  color: $colour7;
+  text-align: center;
+  padding: 10px 0;
+}
 
 // Media Queries
