@@ -386,11 +386,14 @@ header .brand-icon li {
 .smoothie {
   background-color: #f0f5ff;
   position: relative;
-  padding: 155px 0;
+  padding: 137px 0;
 }
-.smoothie h2, .smoothie p {
+.smoothie p {
   margin: 10px 0;
   width: 45%;
+}
+.smoothie h2 {
+  width: 40%;
 }
 .smoothie .img-right {
   position: absolute;
@@ -408,7 +411,7 @@ header .brand-icon li {
 .new-home {
   background-color: #f0f5ff;
   position: relative;
-  padding: 133px 0;
+  padding: 137px 0;
 }
 .new-home .img-left {
   position: absolute;
@@ -420,7 +423,7 @@ header .brand-icon li {
   width: 45%;
   margin-left: auto;
 }
-.new-home .new-home-info h2, .new-home .new-home-info p {
+.new-home .new-home-info p {
   margin: 10px 0;
 }
 
@@ -488,7 +491,10 @@ header .brand-icon li {
 .action .wrapper .con-men .menu2 {
   text-align: right;
 }
-.action .wrapper .con-men .menu2 a {
+.action .wrapper .con-men .menu2 li {
+  padding-bottom: 10px;
+}
+.action .wrapper .con-men .menu2 li a {
   color: #1d81cc;
 }
 
