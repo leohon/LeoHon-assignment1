@@ -515,6 +515,74 @@ header .brand-icon li {
   padding: 10px 0;
 }
 
+@media (max-width: 770px) {
+  .wrapper {
+    max-width: 770px;
+    width: 90%;
+  }
+  header h1 {
+    font-size: 4rem;
+    margin-top: 15vh;
+    line-height: 3rem;
+  }
+  header h2 {
+    font-size: 2rem;
+    padding-top: 0px;
+  }
+  .best .wrapper {
+    display: block;
+  }
+  .best .wrapper img {
+    width: 100vw;
+  }
+  .best .wrapper div {
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .best .wrapper div h2 {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .best .wrapper div p {
+    text-align: left;
+  }
+  .smoothie {
+    padding: 0;
+  }
+  .smoothie .img-right {
+    position: relative;
+    width: 100vw;
+  }
+  .smoothie .wrapper {
+    text-align: center;
+  }
+  .smoothie .wrapper h2 {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .smoothie .wrapper p {
+    text-align: left;
+    width: 100%;
+  }
+  .new-home {
+    padding: 50px 0;
+  }
+  .new-home .img-left {
+    position: relative;
+    width: 100vw;
+  }
+  .new-home .new-home-info {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .new-home .new-home-info h2 {
+    padding: 50px 0;
+  }
+  .new-home .new-home-info p {
+    text-align: left;
+  }
+}
 @media (max-width: 480px) {
   section {
     padding: 50px 0;
@@ -562,41 +630,8 @@ header .brand-icon li {
   .news .imgContainer .img3 {
     display: none;
   }
-  .best .wrapper {
-    display: block;
-  }
-  .best .wrapper img {
-    width: 100vw;
-  }
-  .best .wrapper div {
-    padding: 15px 0 0 0;
-    text-align: center;
-  }
-  .best .wrapper div h2 {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .best .wrapper div p {
-    text-align: left;
-  }
   .smoothie {
-    padding: 0;
     background-color: #fcdde2;
-  }
-  .smoothie .wrapper {
-    text-align: center;
-  }
-  .smoothie .wrapper h2 {
-    width: 100%;
-    padding: 50px 0;
-  }
-  .smoothie .wrapper p {
-    text-align: left;
-    width: 100%;
-  }
-  .smoothie .img-right {
-    position: relative;
-    width: 100vw;
   }
   .button2 {
     background: #042259;
@@ -605,22 +640,6 @@ header .brand-icon li {
   }
   .new-home {
     background-color: #fcdde2;
-    padding: 50px 0;
-  }
-  .new-home .img-left {
-    position: relative;
-    width: 100vw;
-  }
-  .new-home .new-home-info {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
-  .new-home .new-home-info h2 {
-    padding: 50px 0;
-  }
-  .new-home .new-home-info p {
-    text-align: left;
   }
   .links {
     background-color: #f5c8cf;

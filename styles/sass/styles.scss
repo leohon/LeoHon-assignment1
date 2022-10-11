@@ -317,6 +317,99 @@ header {
 }
 
 // Media Queries
+@media (max-width: 770px) {
+  // General
+  .wrapper {
+    max-width: 770px;
+    width: 90%;
+  }
+
+  // Header
+  header {
+    h1 {
+      font-size: 4rem;
+      margin-top: 15vh;
+      line-height: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      padding-top: 0px;
+    }
+  }
+
+  // Best
+  .best .wrapper {
+    display: block;
+
+    img {
+      width: 100vw;
+    }
+
+    div {
+      padding: 15px 0 0 0;
+      text-align: center;
+
+      h2 {
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  // Smoothie
+  .smoothie {
+    padding: 0;
+    
+    .img-right {
+      position: relative;
+      width: 100vw;
+    }
+
+    .wrapper {
+      text-align: center;
+
+      h2 {
+        width: 100%;
+        padding: 50px 0;
+      }
+
+      p {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  // New Home
+  .new-home {
+    padding: 50px 0;
+
+    .img-left {
+    position: relative;
+    width: 100vw;
+    }
+
+    .new-home-info {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+
+      h2 {
+        padding: 50px 0;
+      }
+      
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   // General
   section {
@@ -378,52 +471,9 @@ header {
     }
   }
 
-  // Best
-  .best .wrapper {
-    display: block;
-
-    img {
-      width: 100vw;
-    }
-
-    div {
-      padding: 15px 0 0 0;
-      text-align: center;
-
-      h2 {
-        text-align: center;
-        padding: 0 10px;
-      }
-
-      p {
-        text-align: left;
-      }
-    }
-  }
-
   // Smoothie
   .smoothie {
-    padding: 0;
     background-color: $colour4;
-    
-    .wrapper {
-      text-align: center;
-
-      h2 {
-        width: 100%;
-        padding: 50px 0;
-      }
-
-      p {
-        text-align: left;
-        width: 100%;
-      }
-    }
-
-    .img-right {
-      position: relative;
-      width: 100vw;
-    }
   }
 
   .button2 {
@@ -435,26 +485,6 @@ header {
   // New Home
   .new-home {
     background-color: $colour4;
-    padding: 50px 0;
-
-    .img-left {
-    position: relative;
-    width: 100vw;
-    }
-
-    .new-home-info {
-      width: 100%;
-      margin-left: 0;
-      text-align: center;
-
-      h2 {
-        padding: 50px 0;
-      }
-      
-      p {
-        text-align: left;
-      }
-    }
   }
 
   // Other Links
