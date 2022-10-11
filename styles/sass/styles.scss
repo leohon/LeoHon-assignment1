@@ -72,7 +72,11 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  
+
+  .toggle, .toggle-label {
+    display: none;
+  }
+
   ul {
     display: flex;
     justify-content: right;
@@ -99,6 +103,11 @@ header {
     color: $colour6;
     text-transform: uppercase;
     margin-top: 20vh;
+
+    span::before { 
+      content: '\A'; 
+      white-space: pre; 
+    }
   }
 
   h2 {
@@ -231,9 +240,13 @@ header {
     display: flex;
     justify-content: space-evenly;
 
-    div {
+    .icons {
       display: flex;
       flex-direction: column;
+
+      .comm {
+        display: none;
+      }
 
       i {
         color: $colour1;
@@ -320,6 +333,21 @@ header {
   // Header
   header {
     background-image: url(./assets/header-alt-mobile.png);
+    padding-top: 10vh;
+
+    nav, .toggle {
+      display: none;
+    }
+    .toggle:checked ~ nav {
+      display: block;
+    }
+    .toggle-label {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1em 1em 0 0;
+    }
 
     h1 {
       font-size: 3rem;
@@ -339,15 +367,65 @@ header {
 
   // Main
   // News
-  .news .imgContainer img {
-    margin: 10px;
-    width: calc((100% / 3) - 20px);
+  .news .imgContainer {
+    img {
+      margin: 10px;
+      width: calc((100% / 2) - 20px);
+    }
+
+    .img3 {
+      display: none;
+    }
   }
 
   // Best
+  .best .wrapper {
+    display: block;
 
+    img {
+      width: 100vw;
+    }
+
+    div {
+      padding: 15px 0 0 0;
+      text-align: center;
+
+      h2 {
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
 
   // Smoothie
+  .smoothie {
+    padding: 0;
+    background-color: $colour4;
+    
+    .wrapper {
+      text-align: center;
+
+      h2 {
+        width: 100%;
+        padding: 50px 0;
+      }
+
+      p {
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    .img-right {
+      position: relative;
+      width: 100vw;
+    }
+  }
+
   .button2 {
     background: $colour1;
     color: $colour7;
@@ -355,23 +433,54 @@ header {
   }
 
   // New Home
+  .new-home {
+    background-color: $colour4;
+    padding: 50px 0;
 
+    .img-left {
+    position: relative;
+    width: 100vw;
+    }
+
+    .new-home-info {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+
+      h2 {
+        padding: 50px 0;
+      }
+      
+      p {
+        text-align: left;
+      }
+    }
+  }
 
   // Other Links
-  .links .wrapper {
-    flex-direction: column;
+  .links {
+    background-color: $colour2;
 
-    .icons {
-      margin-bottom: 15px;
+    .wrapper {
+      flex-direction: column;
 
-      a {
-        text-align: center;
-        padding-bottom: 20px;
-      }
+      .icons {
+        margin-bottom: 15px;
 
-      
-    } 
-  }
+        .jobs {
+          display: none;
+        }
+        .comm {
+          display: block;
+        }
+
+        a {
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      } 
+    }
+  } 
 
   // Footer
   // Call to Action

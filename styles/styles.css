@@ -294,6 +294,9 @@ header {
   background-position: center;
   height: 100vh;
 }
+header .toggle, header .toggle-label {
+  display: none;
+}
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,6 +324,10 @@ header h1 {
   color: #1d81cc;
   text-transform: uppercase;
   margin-top: 20vh;
+}
+header h1 span::before {
+  content: "\a";
+  white-space: pre;
 }
 header h2 {
   font-family: "Barlow", sans-serif;
@@ -438,7 +445,7 @@ header .brand-icon li {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.links .wrapper div {
+.links .wrapper .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,13 +454,16 @@ header .brand-icon li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.links .wrapper div i {
+.links .wrapper .icons .comm {
+  display: none;
+}
+.links .wrapper .icons i {
   color: #042259;
   text-align: center;
   font-size: 3rem;
   padding-bottom: 20px;
 }
-.links .wrapper div a {
+.links .wrapper .icons a {
   font-family: "Emblema One", cursive;
   font-size: 1.56rem;
   color: #1d81cc;
@@ -518,6 +528,20 @@ header .brand-icon li {
   }
   header {
     background-image: url(./assets/header-alt-mobile.png);
+    padding-top: 10vh;
+  }
+  header nav, header .toggle {
+    display: none;
+  }
+  header .toggle:checked ~ nav {
+    display: block;
+  }
+  header .toggle-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em 1em 0 0;
   }
   header h1 {
     font-size: 3rem;
@@ -533,12 +557,73 @@ header .brand-icon li {
   }
   .news .imgContainer img {
     margin: 10px;
-    width: calc(33.3333333333% - 20px);
+    width: calc(50% - 20px);
+  }
+  .news .imgContainer .img3 {
+    display: none;
+  }
+  .best .wrapper {
+    display: block;
+  }
+  .best .wrapper img {
+    width: 100vw;
+  }
+  .best .wrapper div {
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .best .wrapper div h2 {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .best .wrapper div p {
+    text-align: left;
+  }
+  .smoothie {
+    padding: 0;
+    background-color: #fcdde2;
+  }
+  .smoothie .wrapper {
+    text-align: center;
+  }
+  .smoothie .wrapper h2 {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .smoothie .wrapper p {
+    text-align: left;
+    width: 100%;
+  }
+  .smoothie .img-right {
+    position: relative;
+    width: 100vw;
   }
   .button2 {
     background: #042259;
     color: #ffffff;
     margin-top: 25px;
+  }
+  .new-home {
+    background-color: #fcdde2;
+    padding: 50px 0;
+  }
+  .new-home .img-left {
+    position: relative;
+    width: 100vw;
+  }
+  .new-home .new-home-info {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .new-home .new-home-info h2 {
+    padding: 50px 0;
+  }
+  .new-home .new-home-info p {
+    text-align: left;
+  }
+  .links {
+    background-color: #f5c8cf;
   }
   .links .wrapper {
     -webkit-box-orient: vertical;
@@ -548,6 +633,12 @@ header .brand-icon li {
   }
   .links .wrapper .icons {
     margin-bottom: 15px;
+  }
+  .links .wrapper .icons .jobs {
+    display: none;
+  }
+  .links .wrapper .icons .comm {
+    display: block;
   }
   .links .wrapper .icons a {
     text-align: center;
