@@ -15,6 +15,13 @@
   <!-- Header -->
   <header>
     <div class="wrapper">
+      
+      <!-- Menu -->
+      <input type="checkbox" class="toggle" id="toggle">
+      <label for="toggle" class="toggle-label">
+        <span><i class="fas fa-bars"></i></span>
+      </label>
+      
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -24,7 +31,7 @@
         </ul>
       </nav>
       
-      <h1>Electric Select</h1>
+      <h1>Electric <span>Select</span></h1>
       <h2>best home appliances</h2>
       
       <!-- social media -->
@@ -46,7 +53,7 @@
         <div class="imgContainer">
           <img src="./styles/assets/gallery-photo-1.jpg" alt="a silver Panasonic microwave">
           <img src="./styles/assets/gallery-photo-2.jpg" alt="a magimix blender">
-          <img src="./styles/assets/gallery-photo-3.jpg" alt="a DeLongh 4 slot toaster">
+          <img src="./styles/assets/gallery-photo-3.jpg" alt="a DeLongh 4 slot toaster" class="img3">
         </div>
       </div>
     </section>
@@ -66,15 +73,16 @@
 
     <!-- Smoothie -->
     <section class="smoothie">
+      <div class="img-right">
+        <img src="./styles/assets/right-photo.jpg" alt="a blender with a glass of green smoothie">
+      </div>
       <div class="wrapper">
         <h2>Smoothies Anyone?</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolorum sed excepturi omnis error odio temporibus perspiciatis sequi autem nemo minima voluptas porro reprehenderit, et debitis quo reiciendis cupiditate corrupti?</p>
         <button class="button2">Read More</button>
       </div>
 
-      <div class="img-right">
-        <img src="./styles/assets/right-photo.jpg" alt="a blender with a glass of green smoothie">
-      </div>
+      
     </section>
 
     <!-- New Home -->
@@ -99,10 +107,10 @@
           <i class="fas fa-car"></i>
           <a href="#">Shop</a>
         </div>
-        <!-- icon2, display:none, add 'Community' -->
         <div class="icons">
           <i class="fas fa-briefcase"></i>
-          <a href="#">Jobs</a>
+          <a href="#" class="jobs">Jobs</a>
+          <a href="#" class="comm">Community</a>
         </div>
         <div class="icons">
           <i class="fas fa-calendar-check"></i>
