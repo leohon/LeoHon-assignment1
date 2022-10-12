@@ -82,17 +82,14 @@ header {
     justify-content: right;
     padding-top: 15px;
 
-    li {
+    a {
       font-family: $font3;
       font-size: 0.9rem;
       text-align: right;
       line-height: 1.45rem;
       text-transform: uppercase;
       padding-left: 50px;
-
-      a {
-        color: $colour1;
-      }
+      color: $colour1;
     }
   }
 
@@ -171,6 +168,7 @@ header {
       p {
         margin-top: 15px;
       }
+
       .button1 {
         background: $colour1;
         color: $colour7;
@@ -185,14 +183,14 @@ header {
   background-color: $colour3;
   position: relative;
   padding: 137px 0;
+  
+  h2 {
+    width: 40%;
+  }
 
   p {
     margin: 10px 0;
     width: 45%;
-  }
-
-  h2 {
-    width: 40%;
   }
 
   .img-right {
@@ -262,7 +260,6 @@ header {
         text-transform: uppercase;
       }
     }
-    
   }
 } 
 
@@ -296,12 +293,9 @@ header {
       .menu2 {
         text-align: right;
         
-        li {
+        a {
           padding-bottom: 10px;
-
-          a {
-            color: $colour6;
-          }
+          color: $colour6;
         }
       }
     }
@@ -390,8 +384,8 @@ header {
     padding: 50px 0;
 
     .img-left {
-    position: relative;
-    width: 100vw;
+      position: relative;
+      width: 100vw;
     }
 
     .new-home-info {
@@ -417,7 +411,6 @@ header {
   }
   .wrapper {
     max-width: 480px;
-    width: 90%;
   }
   h2 {
     font-size: 1.5rem;
@@ -472,7 +465,7 @@ header {
   }
 
   // Smoothie
-  .smoothie {
+  .smoothie, .new-home {
     background-color: $colour4;
   }
 
@@ -480,11 +473,6 @@ header {
     background: $colour1;
     color: $colour7;
     margin-top: 25px;
-  }
-
-  // New Home
-  .new-home {
-    background-color: $colour4;
   }
 
   // Other Links
@@ -518,12 +506,8 @@ header {
     .wrapper {
       flex-direction: column;
 
-      .newsletter, 
-      .con-men {
-        width: 100%;
-      }
-
       .newsletter {
+        width: 100%;
         margin-bottom: 20px;
         text-align: center;
         padding-bottom: 50px;
@@ -539,14 +523,18 @@ header {
         }
       }
 
-      .con-men p {
-        font-size: 0.85rem;
+      .con-men {
+        width: 100%;
 
-        span::before { 
-          content: '\A'; 
-          white-space: pre; 
+        p {
+          font-size: 0.85rem;
+
+          span::before { 
+            content: '\A'; 
+            white-space: pre; 
+          }
         }
-      }
+      } 
     }
   }
 
